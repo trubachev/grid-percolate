@@ -76,10 +76,10 @@ export default function (rootEl, gridSize) {
         if ((openIds.indexOf(blockId) !== -1) && connected(blockId, topSideId, ids)) blocks[i].classList.add("full")
       }
 
-      if (connected(topSideId, bottomSideId, ids) && !document.getElementById("perlocates-label")) {
+      if (connected(topSideId, bottomSideId, ids) && !document.getElementById("percolate-label")) {
         const label = document.createElement("div")
-        label.setAttribute("id", "perlocates-label")
-        label.innerHTML = "<h2>Grid Perlocates!</h2>"
+        label.setAttribute("id", "percolate-label")
+        label.innerHTML = "<h2>Grid Percolates!</h2>"
         grid.appendChild(label)
       }
     })
